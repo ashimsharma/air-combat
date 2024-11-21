@@ -25,4 +25,4 @@
 
 <hr>
 
-<p style="text-align: center;">&copy;Ashim Sharma</p>
+<p align="center">&copy; Ashim Sharma</p>
