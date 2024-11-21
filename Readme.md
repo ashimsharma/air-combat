@@ -1,4 +1,4 @@
-<h1>🔥🛩️AIR COMBAT🛩️🔥</h1>
+<h1 align="center">🔥🛩️AIR COMBAT🛩️🔥</h1>
 <h2>A SVG-powered Javascript game.</h2>
 <h2>Rule the skies in this thrilling air combat experience</h2>
 <h3>Features</h3>
