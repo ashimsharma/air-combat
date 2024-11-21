@@ -9,8 +9,6 @@ let addIntruderAnimation;
 let intruderVelocity = 0.05;
 let intruderPushGap = 3000;
 let gameEnded = false;
-let hasAccess;
-    
 
 // Window Initialiser and Initialisinh helper functions.
 window.addEventListener("load", svgInitialiser);
@@ -23,8 +21,6 @@ async function svgInitialiser() {
 
     setScore();
     setIntrudersCrossed();
-
-    hasAccess = await checkMicrophoneAccess();
 }
 
 function markTerritory() {
@@ -104,10 +100,6 @@ function updateJetPosition(event) {
 
 // Start game and adding all the necessary animations.
 async function startGame() {
-    if(hasAccess){
-        recognition.start();
-    }
-
     if (gameStarted) {
         return;
     }
@@ -124,9 +116,6 @@ async function startGame() {
     intruderAnimation = setInterval(() => {
         animateIntruder();
     }, 1000 / 60);
-
-
-    // Voice Recognition
 }
 
 
