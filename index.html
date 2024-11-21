@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR COMBAT</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">AIR COMBAT</h1>
+        <main class="main">
+            <section>
+                <svg xmlns="http://www.w3.org/2000/svg" id="svg-container" viewbox="0 0 100 90">
+                </svg>
+            </section>
+            <section>
+                <div id="getName-container">
+                    <h2>Please Enter Your Name</h2>
+                    <input type="text" id="nameTextBox" placeholder="Name Here...">
+
+                    <button id="done" onclick="getName()">Done</button>
+                </div>
+                <div id="instructions-container">
+                    <h2>Hello Captain <span id="enteredName"></span></h2>
+                    <p class="instructions">
+                        Welcome to Air Combat. You have to protect your territory from air intruders.
+                    <p>Rules are:</p>
+                    <ul>
+                        <li>If 5 of the air intruders cross your territory border. You will lose the territory and the
+                            simulator ends.</li>
+                        <li>You can only move left or right in your territory.</li>
+                    </ul>
+
+                    <p>Controls:</p>
+                    <ul>
+                        <li>Use the right arrow key to move right.</li>
+                        <li>Use the left arrow key to move left.</li>
+                        <li>Use the spacebar to fire and kill the intruder.</li>
+                    </ul>
+                    <p class="start-msg">*Click on the Start Game to be a hero and protect your territory from unwanted intruders.</p>
+                    </p>
+                    <button id="start-btn" onclick="startGame()">Start Game</button>
+                    <button id="reset-btn" onclick="reset()">Reset</button>
+                </div>
+
+                <div class="game-state">
+                    <div class="intruders">
+                        <p>Intruders Crossed: <span id="intruders-crossed"></span></p>
+                        <p id="intruder-warning">*Warning -> Intruder Crossed</p>
+                    </div>
+    
+                    <div class="scores">
+                        <h3>High Score: <span id="high-score"></span></h3>
+                        <h3>Current Game Score: <span id="current-game-score"></span></h3>
+                    </div>
+                </div>
+                <p id="end-game-msg">Five Intruders entered your territory. GAME ENDED.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Ashim Sharma</p>
+        </footer>
+    </div>
+</body>
+
+<script src="./script.js" defer></script>
+
+</html>
