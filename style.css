@@ -13,6 +13,7 @@ body {
     background: #232526;
     background: -webkit-linear-gradient(to right, #414345, #232526);
     background: linear-gradient(to right, #414345, #232526);
+    min-height: 100vh;
 }
 
 svg {
