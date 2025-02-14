@@ -9,7 +9,7 @@
 - Fire upon the intruders raiding your territory.
 - Kill as many intruders as you see.
 - If a certain number of intruders cross your territory, you lose.
-- Leveraging the power of LocalHost to store the User High Score for future gameplays.
+- Leveraging the power of Local Storage to store the User High Score for future gameplays.
 
 ---
 
